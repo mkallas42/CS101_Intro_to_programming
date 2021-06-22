@@ -18,3 +18,14 @@ For example, the following code should return [4, 23, 42] because elements at in
 
 remove_middle([4, 8 , 15, 16, 23, 42], 1, 3)
 """
+
+
+# Write your function here
+
+def remove_middle(lst, start, end):
+    new_list = lst[:start] + lst[end + 1:]
+    return new_list
+
+
+# Uncomment the line below when your function is done
+print(remove_middle([4, 8, 15, 16, 23, 42], 1, 3))
